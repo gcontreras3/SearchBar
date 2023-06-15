@@ -7,10 +7,12 @@ const contacts = [{
 const filters = {
     searchText: ''
 }
-// let newListItem = document.createElement('p')
-// document.querySelector('#addName').addEventListener('input',function(e){
-//     const newItem =  newListItem.textContent = e.target.value
-// document.querySelector('#contact-list').appendChild(newListItem)
+
+let newListItem = document.createElement('p')
+document.querySelector('#addName').addEventListener('input',function(e){
+    const newItem =  newListItem.textContent = e.target.value
+document.querySelector('#contact-list').appendChild(newListItem)
+})
 // contacts.push(newItem)
 // localStorage.setItem(newItem)
 // localStorage.getItem(newItem)
@@ -23,12 +25,9 @@ const itemFunction = document.querySelector('#addName').addEventListener('input'
     // e.target.value
     contactList.textContent = e.target.value
     
-    
 })
+
 document.querySelector('#contact-list').appendChild(itemFunction)
-
-
-
 
 // document.querySelector('#contact-list').innerHTML = ''
 
@@ -38,9 +37,9 @@ document.querySelector('#contact-list').appendChild(itemFunction)
 // 2. Get Phone from user input and add it to the list
 // 3. For Filter Contacts button, use a drop down
 // 4. For sort Contacts button, use a drop down
+// 5. style with tailwind 
 
-
-
+// append another p tag
 
 
 // Filter functions
@@ -93,16 +92,6 @@ document.querySelector('#search-input').addEventListener('input', function(e){
 //     console.log(e.target.value)
 //     contacts.phone.appendChild(e.target.value)
 // })
-
-
-
-
-
-
-
-
-
-
 
 
 
